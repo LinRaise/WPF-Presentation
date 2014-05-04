@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPFPresentation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:avalonEdit="clr-namespace:WPFPresentation"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ListView ItemsSource="{Binding Samples}" x:Name="SampleSelector" SelectionMode="Single">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ContentControl Height="30">
+                        <TextBlock Margin="20,0,0,0" VerticalAlignment="Center" Text="{Binding Name}"></TextBlock>
+                    </ContentControl>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <avalonEdit:CodeVisualizer Grid.Column="1" DataContext="{Binding ElementName=SampleSelector, Path=SelectedItem}"></avalonEdit:CodeVisualizer>
+    </Grid>
+</Window>
