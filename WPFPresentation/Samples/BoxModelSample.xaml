@@ -1,12 +1,23 @@
 ﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid Background="Green">
-        <Canvas Width="70" Height="70" Background="Yellow">
-            <Canvas Width="50" Height="50" Background="Red"></Canvas>
-        </Canvas>
-    </Grid>
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
+    <!-- Outer Border with black stroke -->
+    <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Background="#FDF3BE">
+
+        <!-- Aligned content -->
+        <Grid Background="#F3E18E" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+
+            <!-- A button with margin, padding set -->
+            <Button Background="#B7A879" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Margin="50" Padding="30">
+
+                <!-- Inner content with fixed size -->
+                <Grid Background="White" Width="300" Height="70">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Content</TextBlock>
+                </Grid>
+            </Button>
+        </Grid>
+    </Border>
 </UserControl>

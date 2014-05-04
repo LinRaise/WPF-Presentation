@@ -9,8 +9,8 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <f:FlipPanel x:Name="flipper">
         <f:FlipPanel.Front>
-            <Grid>
-                <Grid Grid.Column="0" x:Name="WPFDemoContainer"></Grid>
+            <Grid>               
+                <Grid x:Name="WPFDemoContainer"></Grid>
                 <Button x:Name="FrontSwitchButton" 
                             Width="80" Height="25" 
                             Content="View Code" 
@@ -27,7 +27,7 @@
 				        FontSize="10pt"
 				        SyntaxHighlighting="XML" />
                 
-                <Slider Orientation="Vertical" Height="200" Margin="0,60,20,0" x:Name="SizeSlider" IsSnapToTickEnabled="True"
+                <Slider Orientation="Vertical" Height="200" Margin="0,60,20,0" x:Name="SizeSlider" 
                             HorizontalAlignment="Right" VerticalAlignment="Top" 
                             Minimum="10" Maximum="100" TickFrequency="10" TickPlacement="Both"
                             Value="{Binding ElementName=textEditor, Path=FontSize}"></Slider>

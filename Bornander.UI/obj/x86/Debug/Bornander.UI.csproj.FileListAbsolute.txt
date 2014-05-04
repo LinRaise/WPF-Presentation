@@ -5,3 +5,10 @@ D:\TSanta\WPF_Presentation\WPFPresentation\Bornander.UI\obj\x86\Debug\Bornander.
 D:\TSanta\WPF_Presentation\WPFPresentation\Bornander.UI\obj\x86\Debug\Bornander.UI.csproj.GenerateResource.Cache
 D:\TSanta\WPF_Presentation\WPFPresentation\Bornander.UI\obj\x86\Debug\Bornander.UI.dll
 D:\TSanta\WPF_Presentation\WPFPresentation\Bornander.UI\obj\x86\Debug\Bornander.UI.pdb
+C:\Users\Thomas\Documents\GitHub\WPFPresentation\Bornander.UI\bin\Debug\Bornander.UI.dll
+C:\Users\Thomas\Documents\GitHub\WPFPresentation\Bornander.UI\bin\Debug\Bornander.UI.pdb
+C:\Users\Thomas\Documents\GitHub\WPFPresentation\Bornander.UI\obj\x86\Debug\Bornander.UI.csprojResolveAssemblyReference.cache
+C:\Users\Thomas\Documents\GitHub\WPFPresentation\Bornander.UI\obj\x86\Debug\Bornander.UI.Properties.Resources.resources
+C:\Users\Thomas\Documents\GitHub\WPFPresentation\Bornander.UI\obj\x86\Debug\Bornander.UI.csproj.GenerateResource.Cache
+C:\Users\Thomas\Documents\GitHub\WPFPresentation\Bornander.UI\obj\x86\Debug\Bornander.UI.dll
+C:\Users\Thomas\Documents\GitHub\WPFPresentation\Bornander.UI\obj\x86\Debug\Bornander.UI.pdb

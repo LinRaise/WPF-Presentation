@@ -16,21 +16,54 @@ namespace WPFPresentation
         {
             InitializeComponent();
             LoadSamples();
-            this.DataContext = this;
+            DataContext = this;
             SampleSelector.SelectedItem = Samples[0];
+
+            Loaded += MainWindow_Loaded;
         }
 
         private void LoadSamples()
         {
             _samples.Add(new SampleViewModel
-                {
-                    Name = "Grid Sample",
-                    Code = GetResourceText("WPFPresentation.Samples.GridSample.xaml")
-                });
+            {
+                Name = "Layout Overview",
+                Code = GetResourceText("WPFPresentation.Samples.BoxModelSample.xaml")
+            });
+
             _samples.Add(new SampleViewModel
             {
-                Name = "Box Model",
-                Code = GetResourceText("WPFPresentation.Samples.BoxModelSample.xaml")
+                Name = "Height & Width",
+                Code = GetResourceText("WPFPresentation.Samples.SizeSample.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "Margin & Padding",
+                Code = GetResourceText("WPFPresentation.Samples.MarginPadding.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "Visibility",
+                Code = GetResourceText("WPFPresentation.Samples.VisibilitySample.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "Alignments",
+                Code = GetResourceText("WPFPresentation.Samples.AlignmentSample.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "Transforms",
+                Code = GetResourceText("WPFPresentation.Samples.TransformsSample.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "Transforms 2.",
+                Code = GetResourceText("WPFPresentation.Samples.Transforms2Sample.xaml")
             });
         }
 
@@ -52,10 +85,8 @@ namespace WPFPresentation
 
             foreach (var sample in samples)
             {
-                //INFO: we can use this do make it more dynamic
+                //INFO: we can use this do make load the embedded resources in an automated fashion
             }
-
-
         }
     }
 }
