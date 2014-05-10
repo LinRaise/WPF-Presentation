@@ -65,6 +65,54 @@ namespace WPFPresentation
                 Name = "Transforms 2.",
                 Code = GetResourceText("WPFPresentation.Samples.Transforms2Sample.xaml")
             });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "Canvas",
+                Code = GetResourceText("WPFPresentation.Samples.CanvasSample.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "StackPanel",
+                Code = GetResourceText("WPFPresentation.Samples.StackPanelSample.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "WrapPanel",
+                Code = GetResourceText("WPFPresentation.Samples.WrapPanelSample.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "DockPanel",
+                Code = GetResourceText("WPFPresentation.Samples.DockPanelSample.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "Grid General",
+                Code = GetResourceText("WPFPresentation.Samples.GridSample.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "Grid Sizing",
+                Code = GetResourceText("WPFPresentation.Samples.GridSizingSample.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "Grid Alignment",
+                Code = GetResourceText("WPFPresentation.Samples.GridAlignmentSample.xaml")
+            });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "Primitive Panels",
+                Code = GetResourceText("WPFPresentation.Samples.PrimitivePanelsSample.xaml")
+            });
         }
 
         private string GetResourceText(string path)
