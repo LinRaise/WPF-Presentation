@@ -5,6 +5,121 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300" Background="White">
     <Grid>
-      <TextBlock Text="Primitive Panels" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="TabPanel" Grid.Row="0" />
+        <TabPanel Grid.Row="1" Margin="0,0,0,0">
+            <Button Background="Red" MinWidth="45" Height="25"></Button>
+            <Button Background="Yellow" MinWidth="45" Height="25"></Button>
+            <Button Background="Green" MinWidth="45" Height="25"></Button>
+            <Button Background="White" MinWidth="45" Height="25"></Button>
+            <Button Background="Black" MinWidth="45" Height="25"></Button>
+            <Button Background="Gray" MinWidth="45" Height="25"></Button>
+            <Button Background="Purple" MinWidth="45" Height="25"></Button>
+            <Button Background="Cyan" MinWidth="45" Height="25"></Button>
+            <Button Background="Orange" MinWidth="45" Height="25"></Button>
+            <Button Background="Blue" MinWidth="45" Height="25"></Button>
+            <Button Background="Chocolate" MinWidth="45" Height="25"></Button>
+        </TabPanel>
+
+        <TextBlock Text="ToolbarPanel" Grid.Row="2" />
+        <ToolBarPanel Grid.Row="3" Visibility="Collapsed">
+            <Button Background="Red" MinWidth="45" Height="25"></Button>
+            <Button Background="Yellow" MinWidth="45" Height="25"></Button>
+            <Button Background="Green" MinWidth="45" Height="25"></Button>
+            <Button Background="White" MinWidth="45" Height="25"></Button>
+            <Button Background="Black" MinWidth="45" Height="25"></Button>
+            <Button Background="Gray" MinWidth="45" Height="25"></Button>
+            <Button Background="Purple" MinWidth="45" Height="25"></Button>
+            <Button Background="Cyan" MinWidth="45" Height="25"></Button>
+            <Button Background="Orange" MinWidth="45" Height="25"></Button>
+            <Button Background="Blue" MinWidth="45" Height="25"></Button>
+            <Button Background="Chocolate" MinWidth="45" Height="25"></Button>
+        </ToolBarPanel>
+
+        <TextBlock Text="ToolbarOverFlowPanel" Grid.Row="4" />
+        <ToolBarOverflowPanel Grid.Row="5">
+            <Button Background="Red" MinWidth="45" Height="25"></Button>
+            <Button Background="Yellow" MinWidth="45" Height="25"></Button>
+            <Button Background="Green" MinWidth="45" Height="25"></Button>
+            <Button Background="White" MinWidth="45" Height="25"></Button>
+            <Button Background="Black" MinWidth="45" Height="25"></Button>
+            <Button Background="Gray" MinWidth="45" Height="25"></Button>
+            <Button Background="Purple" MinWidth="45" Height="25"></Button>
+            <Button Background="Cyan" MinWidth="45" Height="25"></Button>
+            <Button Background="Orange" MinWidth="45" Height="25"></Button>
+            <Button Background="Blue" MinWidth="45" Height="25"></Button>
+            <Button Background="Chocolate" MinWidth="45" Height="25"></Button>
+        </ToolBarOverflowPanel>
+
+        <TextBlock Text="ToolBarTray" Grid.Row="6" />
+        <ToolBarTray Grid.Row="7">
+            <ToolBar>
+                <Button Background="Red" MinWidth="45" Height="25"></Button>
+                <Button Background="Yellow" MinWidth="45" Height="25"></Button>
+                <Button Background="Green" MinWidth="45" Height="25"></Button>
+            </ToolBar>
+
+            <ToolBar>
+                <Button Background="Red" MinWidth="45" Height="25"></Button>
+                <Button Background="Yellow" MinWidth="45" Height="25"></Button>
+                <Button Background="Green" MinWidth="45" Height="25"></Button>
+            </ToolBar>
+            <ToolBar>
+                <Button Background="Red" MinWidth="45" Height="25"></Button>
+                <Button Background="Yellow" MinWidth="45" Height="25"></Button>
+                <Button Background="Green" MinWidth="45" Height="25"></Button>
+            </ToolBar>
+        </ToolBarTray>
+
+        <TextBlock Text="UniformGrid" Grid.Row="8" />
+        <UniformGrid Grid.Row="9">
+            <Button Background="Red" MinWidth="45" Height="25"></Button>
+            <Button Background="Yellow" MinWidth="45" Height="25"></Button>
+            <Button Background="Green" MinWidth="45" Height="25"></Button>
+            <Button Background="White" MinWidth="45" Height="25"></Button>
+            <Button Background="Black" MinWidth="45" Height="25"></Button>
+            <Button Background="Gray" MinWidth="45" Height="25"></Button>
+            <Button Background="Purple" MinWidth="45" Height="25"></Button>
+            <Button Background="Cyan" MinWidth="45" Height="25"></Button>
+            <Button Background="Orange" MinWidth="45" Height="25"></Button>
+            <Button Background="Blue" MinWidth="45" Height="25"></Button>
+            <Button Background="Chocolate" MinWidth="45" Height="25"></Button>
+        </UniformGrid>
+
+        <TextBlock Text="SelectivescrollingGrid" Grid.Row="10" />
+        <SelectiveScrollingGrid Grid.Row="11" SelectiveScrollingGrid.SelectiveScrollingOrientation="Vertical">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Button Background="Red" MinWidth="45" Height="25" Grid.Row="0"></Button>
+            <Button Background="Yellow" MinWidth="45" Height="25" Grid.Row="1"></Button>
+            <Button Background="Green" MinWidth="45" Height="25" Grid.Row="2"></Button>
+            <Button Background="White" MinWidth="45" Height="25" Grid.Row="3"></Button>
+        </SelectiveScrollingGrid>
+
+
     </Grid>
 </UserControl>

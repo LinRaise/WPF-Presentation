@@ -113,6 +113,12 @@ namespace WPFPresentation
                 Name = "Primitive Panels",
                 Code = GetResourceText("WPFPresentation.Samples.PrimitivePanelsSample.xaml")
             });
+
+            _samples.Add(new SampleViewModel
+            {
+                Name = "Overflow",
+                Code = GetResourceText("WPFPresentation.Samples.OverflowSample.xaml")
+            });
         }
 
         private string GetResourceText(string path)
@@ -129,12 +135,17 @@ namespace WPFPresentation
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            var samples = this.GetType().Assembly.GetManifestResourceNames().Where(n => n.Contains(".xaml"));
+            //var samples = this.GetType().Assembly.GetManifestResourceNames().Where(n => n.Contains(".xaml"));
 
-            foreach (var sample in samples)
-            {
-                //INFO: we can use this do make load the embedded resources in an automated fashion
-            }
+            //foreach (var sample in samples)
+            //{
+            //    //INFO: we can use this to load the embedded resources in an automated fashion
+            //    _samples.Add(new SampleViewModel
+            //    {
+            //        Name = sample.Split('.').Skip(2).Take(1).ToString(), 
+            //        Code = GetResourceText(sample)
+            //    });
+            //}
         }
     }
 }

@@ -124,6 +124,9 @@
     <EmbeddedResource Include="Samples\PrimitivePanelsSample.xaml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Samples\OverflowSample.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MvvmTextEditor.cs" />
@@ -159,6 +162,9 @@
       <Project>{343cfda3-dc75-4331-bc4c-3aa1a06db495}</Project>
       <Name>Bornander.UI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\2-of-hearts.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
